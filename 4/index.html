@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <div > <img class="logo" src="../logo.png"></div>
+   <h3>Vue.js урок 4</h3>
+    
+   <div id="app">
+      <button v-on:click="show = !show">Скрыть / Показать</button>
+       <p v-if="show">Text 1. Lorem ipsum dolor sit amet.</p>
+       <p v-else>Text 2</p>
+       <hr> 
+       <h4>Цикл</h4>
+    <ul>
+        <li v-for="car in cars">{{ car.model }}</li>
+    </ul> 
+    <hr>
+    <ul>
+        <li v-for="(car, i) in cars">{{i }} - {{ car.model }}, скорость: {{ car.speed }}</li>
+    </ul>   
+   </div> 
+   
+   
+   
+   
+    
+    <script src="main.js"></script>
+</body>
+</html>

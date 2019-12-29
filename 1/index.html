@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+   <a href="index2.html">page2</a>
+   <h3>Vue.js урок 1</h3>
+   <br><br>
+   <div id="app">
+      <span v-on:mouseover="changeText">Text</span>
+       <p>{{ title }}</p>
+       <p v-bind:class="styleCSS"> Цвет: {{ styleCSS }}</p>
+       <input type="text" v-on:input="styleCSS = $event.target.value">
+   </div>
+   
+   
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
